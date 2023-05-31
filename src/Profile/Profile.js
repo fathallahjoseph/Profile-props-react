@@ -1,14 +1,13 @@
 import React from 'react' //import react
 import  "../App.css" //import css 
-import Picture from './Photo.jpg'; // import my picture to folder profile
 import PropTypes from 'prop-types'; // import prop-types to make my types str or num...
 //profile function child
-const Profile = ({FullName,Profission,Bio,handleName}) => {
+const Profile = ({FullName,Profission,Bio,handleName,children}) => {
   return (
     <div className='div'>
 <h2>{FullName}</h2>
 <h1>{Profission}</h1>
-<image><img className='pic' src={Picture} alt='pic'/></image>
+<image>{children}</image>
 <h3>{Bio}</h3>
 <button className='button' onClick={() => handleName(FullName)}>Show Name</button>
 
